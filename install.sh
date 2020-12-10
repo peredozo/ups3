@@ -121,7 +121,7 @@ function percnet_to_brightness() {
 
 # install system required
 function install_sysreq(){
-	SOFT=$(dpkg -l $SOFTWARE_LIST | grep "<none>")
+	SOFT=$(dpkg -l $SOFTWARE_LIST | grep "no packages found")
 	if [ -n "$SOFT" ]; then
 		apt update
 		apt -y install $SOFTWARE_LIST
