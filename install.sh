@@ -121,17 +121,24 @@ function percnet_to_brightness() {
 
 # install system required
 function install_sysreq(){
-	SOFT=$(dpkg -l $SOFTWARE_LIST | grep "no packages found")
-	if [ -n "$SOFT" ]; then
+	# SOFT=$(dpkg -l $SOFTWARE_LIST | grep "no packages found")
+	# if [ -n "$SOFT" ]; then
 		apt update
 		apt -y install $SOFTWARE_LIST
-	fi
+	# fi
 	SOFT=$(pip3 search rpi-ws281x | grep "INSTALLED")
 	if [ -z "$SOFT" ]; then
 		pip3 install rpi-ws281x
 		echo "rpi-ws281x install complete!"
 	else
 		echo "rpi-ws281x already exists."
+	fi
+	SOFT=$(pip3 search smbus | grep "INSTALLED")
+	if [ -z "$SOFT" ]; then
+		pip3 install smbus
+		echo "smbus install complete!"
+	else
+		echo "smbus already exists."
 	fi
 }
 
