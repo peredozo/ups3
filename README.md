@@ -30,11 +30,7 @@ sudo ./install.sh
 └──────────────────────────────────────────────────────────┘
 ```
 View Status:
-```
-sudo python3 status.py or sudo python3 status.py -t
-```
+`sudo python3 status.py` or `sudo python3 status.py -t`
 
 View logs:
-```
-cat /var/log/smartups.log
-```
+`cat /var/log/smartups.log`
