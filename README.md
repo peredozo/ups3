@@ -1,19 +1,16 @@
 # ups3
-This repository is a fork from the original 
+This is a fork from the original 
 [Raspberry Pi UPS HAT V3](https://github.com/geekworm-com/ups3) 
-repository with the focus of making it compatible with python3.
+repository with the focus of making it compatible with Python3 and Ubuntu Server 20.04.
 
-Owners email contact: sp@geekworm.com
 # Test
-This project has been tested on a Raspberry Pi 4 (Buster) system.
+This project has been tested on a Raspberry Pi 4B + Ubuntu Server 20.04.
 
 # Setup (Raspberry Pi)
 
 git clone https://github.com/geekworm-com/ups3.git
 
 cd ups3
-
-chmod +x *.sh *.py
 
 sudo ./install.sh
 
@@ -22,7 +19,7 @@ sudo ./install.sh
                │                                                          │
                │                 1 UPS GPIO [ 18 ]                        │
                │                 2 LED Brightness [ 10% ]                 │
-               │                 3 Poweoff power [ <5% ]                  │
+               │                 3 Poweroff power [ <5% ]                 │
                │                 4 Auto run script [ enabled ]            │
                │                 5 Safe shutdown [ enabled ]              │
                │                 6 Apply Settings                         │
@@ -43,4 +40,3 @@ sudo python3 status.py or sudo python3 status.py -t
 View logs:
 
 cat /var/log/smartups.log
-
