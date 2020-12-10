@@ -15,7 +15,7 @@ SERVICENAME="smartups"
 SERVICEFILE="smartups.service"
 SERVICEPATH="/etc/systemd/system/"
 SERVCIEPOWEROFF="/smartups_poweroff.service"
-SOFTWARE_LIST="scons"
+SOFTWARE_LIST="python3 python3-pip scons"
 POWEROFF_POWER=15
 SERVICEENABLED="disabled"
 SAFESHUTDOWN="disabled"
@@ -126,9 +126,9 @@ function install_sysreq(){
 		apt update
 		apt -y install $SOFTWARE_LIST
 	fi
-	SOFT=$(pip search rpi-ws281x | grep "INSTALLED")
+	SOFT=$(pip3 search rpi-ws281x | grep "INSTALLED")
 	if [ -z "$SOFT" ]; then
-		pip install rpi-ws281x
+		pip3 install rpi-ws281x
 		echo "rpi-ws281x install complete!"
 	else
 		echo "rpi-ws281x already exists."
