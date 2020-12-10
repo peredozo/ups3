@@ -3,7 +3,9 @@ This is a fork from the original
 [Raspberry Pi UPS HAT V3](https://github.com/geekworm-com/ups3) 
 repository with the focus of making it compatible with Python3 and Ubuntu Server 20.04.
 
-# Setup (Raspberry Pi)
+Original WIKI: https://raspberrypiwiki.com/UPS3
+
+# Setup (Raspberry Pi + Ubuntu Server 20.04)
 ```
 git clone https://github.com/peredozo/ups3.git
 cd ups3
