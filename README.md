@@ -7,13 +7,11 @@ repository with the focus of making it compatible with Python3 and Ubuntu Server
 This project has been tested on a Raspberry Pi 4B + Ubuntu Server 20.04.
 
 # Setup (Raspberry Pi)
-
-git clone https://github.com/geekworm-com/ups3.git
-
+```
+git clone https://github.com/peredozo/ups3.git
 cd ups3
-
 sudo ./install.sh
-
+```
                ┌────────────────────┤ UPS V3 Setting ├────────────────────┐
                │ Select the appropriate options:                          │
                │                                                          │
