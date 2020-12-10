@@ -38,7 +38,7 @@ sudo ./install.sh
 
 View Status:
 
-sudo python status.py or sudo python status.py -t
+sudo python3 status.py or sudo python3 status.py -t
 
 View logs:
 
